@@ -1,6 +1,9 @@
+package comparator;
 import java.util.Comparator;
 import java.text.Collator;
 import java.util.Locale;
+
+import account_management.BankAccount;
 public class NameComparator implements Comparator<BankAccount> {
     @Override
     public int compare(BankAccount a1, BankAccount a2) {

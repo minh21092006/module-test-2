@@ -1,3 +1,4 @@
+package account_management;
 public class BankAccount{
     private static int accountCounter = 0;
     private String name;
@@ -42,7 +43,7 @@ public class BankAccount{
     public void setPassword(String password) {
         this.password = password;
     }
-    
+
     @Override
     public String toString() {
         return "Số tài khoản: "+accountId+", Họ và tên: "+name+", Ngày sinh: "+birthDate+", Số điện thoại: "+phoneNumber+", password: "+password+", Số dư: "+balance;
