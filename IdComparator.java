@@ -5,5 +5,4 @@ public class IdComparator implements Comparator<BankAccount> {
     public int compare(BankAccount a1, BankAccount a2) {
         return a1.getAccountId().compareTo(a2.getAccountId());
     }
-    
 }
