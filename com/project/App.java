@@ -1,15 +1,15 @@
-package bank_app;
+package com.project;
 import java.util.Scanner;
 
-import services.Service1;
-import services.Service2;
-import services.Service3;
-import services.Service4;
-import services.Service5;
-import services.Service6;
-import services.Service7;
-import services.Service8;
-import services.Service9;
+import com.project.services.Service1;
+import com.project.services.Service2;
+import com.project.services.Service3;
+import com.project.services.Service4;
+import com.project.services.Service5;
+import com.project.services.Service6;
+import com.project.services.Service7;
+import com.project.services.Service8;
+import com.project.services.Service9;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -25,7 +25,7 @@ public class App {
                 +"7. Rút tiền khỏi tài khoản ngân hàng.\n"
                 +"8. Nạp thêm tiền vào tài khoản ngân hàng.\n"
                 +"9. Chuyển tiền.\n"
-                +"Nhập 1 số (1-7) để chọn chức năng hoặc nhập kí tự khác để thoát.";
+                +"Nhập 1 số (1-9) để chọn chức năng hoặc nhập kí tự khác để thoát.";
         System.out.println(s);
         String choice= scanner.nextLine();
         while(true){
@@ -68,6 +68,7 @@ public class App {
                     break;
                 default:
                     System.out.println("Thoát chương trình.");
+                    scanner.close();
                     return;
             }
             System.out.println(s);

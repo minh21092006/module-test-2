@@ -1,9 +1,9 @@
-package services;
+package com.project.services;
 import java.util.List;
 import java.util.Scanner;
 
-import account_management.BankAccount;
-import account_management.BankAccountManagementMenu;
+import com.project.account_management.BankAccount;
+import com.project.account_management.BankAccountManagementMenu;
 
 public class Service6 {
     Scanner scanner = new Scanner(System.in);

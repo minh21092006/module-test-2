@@ -1,4 +1,4 @@
-package account_management;
+package com.project.account_management;
 public class BankAccount{
     private static int accountCounter = 0;
     private String name;

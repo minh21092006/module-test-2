@@ -1,9 +1,9 @@
-package services;
+package com.project.services;
 import java.util.List;
 
-import account_management.BankAccount;
-import searching.Searching;
-import searching.SearchingFactory;
+import com.project.account_management.BankAccount;
+import com.project.searching.Searching;
+import com.project.searching.SearchingFactory;
 
 public class Service3 {
     public void searchingAccount(){

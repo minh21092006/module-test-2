@@ -1,4 +1,4 @@
-package searching;
+package com.project.searching;
 import java.util.Scanner;
 
 public class SearchingFactory {

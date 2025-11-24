@@ -1,4 +1,5 @@
-package services;
+package com.project.services;
+import java.io.FileWriter;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
@@ -6,8 +7,8 @@ import java.time.format.DateTimeParseException;
 import java.util.List;
 import java.util.Scanner;
 
-import account_management.BankAccount;
-import account_management.BankAccountManagementMenu;
+import com.project.account_management.BankAccount;
+import com.project.account_management.BankAccountManagementMenu;
 
 public class Service4 {
     Scanner scanner = new Scanner(System.in);
@@ -57,6 +58,12 @@ public class Service4 {
         }
         System.out.println("Mật khẩu:");
         String password = scanner.nextLine();
+        try(FileWriter writer = new FileWriter("src\\com\\project\\database\\Data10.txt",true)) {
+            writer.write(name+", "+balance+", "+birthDate+", "+phoneNumber+", "+password+"\n");
+        } catch (Exception e) {
+            System.out.println("Lỗi ghi file. Tạo tài khoản thất bại.");
+            return;
+        }
         accounts.add(new BankAccount(name, balance, birthDate, phoneNumber, password));
         System.out.println("Tài khoản ngân hàng mới đã được tạo thành công.");
     }

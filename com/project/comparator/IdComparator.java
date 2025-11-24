@@ -1,7 +1,7 @@
-package comparator;
+package com.project.comparator;
 import java.util.Comparator;
 
-import account_management.BankAccount;
+import com.project.account_management.BankAccount;
 
 public class IdComparator implements Comparator<BankAccount> {
     @Override
